@@ -1,1 +1,16 @@
 
+
+.field {
+  margin: 20px 0 0 0;
+}
+
+.field__textinput {
+  font-size: 1em;
+  padding: 15px 0;
+  text-align: center;
+  min-width: 500px;
+}
+
+.card {
+  display: none;
+}

@@ -1,6 +1,6 @@
 
 $(document).ready(function(){
-
+    var robot;
 
 // Navigation
 
