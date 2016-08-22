@@ -35,5 +35,10 @@ $(document).ready(function(){
     $("." + previousCard).show();
   });
 
+
+  $('.robotCard').click(function() {
+    console.log("You chose", this.id);
+  });
+
 })
 
