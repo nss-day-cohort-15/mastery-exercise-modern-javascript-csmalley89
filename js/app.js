@@ -35,10 +35,32 @@ $(document).ready(function(){
     $("." + previousCard).show();
   });
 
+// Captures userName
+    $("[next='robotPage']").on('click', function(e) {
 
-  $('.robotCard').click(function() {
-    console.log("You chose", this.id);
+      var p1Name = $('#userName').val();
+      console.log(p1Name)
   });
+
+
+// Allows users to select Player 1 and Player 2 robots
+  $('.robotCard').on('click', function(a){
+    $(this).addClass('p1');
+    $(".cardContent", this).html("Player 1");
+    console.log("Player 1 is", this.id);
+    $('.robotCard').on("click", function(b){
+      $(this).removeClass('p1')
+      $(this).addClass('p2');
+      $(".cardContent", this).html("Player 2");
+      console.log("Player 2 is", this.id);
+    });
+    $('.robotCard').click(function(){
+      $('.robotCard').off('click');
+    });
+  });
+
+
+
 
 })
 

@@ -17,4 +17,12 @@
 
 .robotCard {
   border: 3px solid black;
+  width: 240px;
+  height: 300px;
+}
+.p1 {
+  background-color: green;
+}
+.p2 {
+  background-color: red;
 }
