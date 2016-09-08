@@ -35,3 +35,9 @@
 .p2 {
   background-color: red;
 }
+#userName {
+  width: 120%;
+}
+.ban {
+  margin-left: -75px;
+}

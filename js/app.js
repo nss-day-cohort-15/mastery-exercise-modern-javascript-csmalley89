@@ -69,11 +69,11 @@ var Robot = (function(robot){
     };
 
     function printStats(p1, p2){
-      var playerOutput = `<div class="battleCard"><h3>${p1.name}<br><small> Fighting for ${p1Name}</small></h3><br><p>${p1.name} has an attack strenth of ${p1.attack}</p><br>` +
+      var playerOutput = `<div class="battleCard"><h3>${p1.name}<br><small> Fighting for ${p1Name}</small></h3><br><p>${p1.name} has an attack strength of ${p1.attack}</p><br>` +
                      `Health: ${p1.health}<br>${p1.img}</div>`;
       $(".p1Stats").html(playerOutput);
 
-      var enemyOutput = `<div class="battleCard"><h3>${p2.name}<br><small> Fighting against mankind!</small></h3><br><p>${p2.name} has an attack strenth of ${p2.attack}</p><br>` +
+      var enemyOutput = `<div class="battleCard"><h3>${p2.name}<br><small> Fighting against mankind!</small></h3><br><p>${p2.name} has an attack strength of ${p2.attack}</p><br>` +
                      `Health: ${p2.health}<br>${p2.img}</div>`;
       $(".p2Stats").html(enemyOutput);
     }
@@ -89,9 +89,9 @@ var Robot = (function(robot){
       printStats(p2, p1)
 
       if ((p2.health) <= 0) {
-        alert("Game over. You win!")
+        $(".banner").append(`<h1 class="ban">Game over. You win!</h1>`);
       } else if (p1.health <= 0) {
-        alert("Game over. You lose.")
+       $(".banner").append(`<h1 class="ban">Game over. You lose.</h1>`);
       }
     })
 
