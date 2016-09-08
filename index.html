@@ -51,7 +51,7 @@
           <h2>Good Guy League</h2>
         </div>
         <div class="col-lg-4 col-md-4">
-          <div id="bender" class="robotCard">
+          <div id="Bender" class="robotCard">
             <h3>Bender</h3>
             <img src="/img/bender.png">
             <div class="cardContent"></div>
@@ -59,7 +59,7 @@
         </div>
 
         <div class="col-lg-4 col-md-4">
-          <div id="URL" class="robotCard">
+          <div id="Url" class="robotCard">
             <h3>URL</h3>
             <img src="/img/url.png">
             <div class="cardContent"></div>
@@ -67,7 +67,7 @@
         </div>
 
         <div class="col-lg-4 col-md-4">
-          <div id="kwanzaaBot" class="robotCard">
+          <div id="KwanzaaBot" class="robotCard">
             <h3>Kwanzaa Bot</h3>
             <img src="/img/kwanzaaBot.png">
             <div class="cardContent"></div>
@@ -81,7 +81,7 @@
           <h2>Evil League</h2>
         </div>
         <div class="col-lg-4 col-md-4">
-          <div id="robotDevil" class="robotCard">
+          <div id="Devil" class="robotCard">
             <h3>Robot Devil</h3>
             <img src="/img/robotDevil.png">
             <div class="cardContent"></div>
@@ -89,7 +89,7 @@
         </div>
 
         <div class="col-lg-4 col-md-4">
-          <div id="santa" class="robotCard">
+          <div id="Santa" class="robotCard">
             <h3>Robot Santa</h3>
             <img src="/img/santa.png">
             <div class="cardContent"></div>
@@ -111,7 +111,7 @@
           <h2>Battle League</h2>
         </div>
         <div class="col-lg-4 col-md-4">
-          <div id="billionaireBot" class="robotCard">
+          <div id="BillionaireBot" class="robotCard">
             <h3>Billionaire Bot</h3>
             <img src="/img/billionairebot.png">
             <div class="cardContent"></div>
@@ -119,7 +119,7 @@
         </div>
 
         <div class="col-lg-4 col-md-4">
-          <div id="destructor" class="robotCard">
+          <div id="Destructor" class="robotCard">
             <h3>Destructor</h3>
             <img src="/img/destructor.png">
             <div class="cardContent"></div>
@@ -127,7 +127,7 @@
         </div>
 
         <div class="col-lg-4 col-md-4">
-          <div id="clearcutter" class="robotCard">
+          <div id="Clearcutter" class="robotCard">
             <h3>Clearcutter</h3>
             <img src="/img/clearcutter.png">
             <div class="cardContent"></div>
@@ -146,32 +146,27 @@
       </div>
     </section>
 
-  <!-- Weapon Selection Screen -->
-<!--     <section id = "weaponScreen" class="card weaponPage">
-      <div class = "row">
-        <div class="col-lg-12 col-md-12">
-          <h1 class= "header">CHOOSE YOUR WEAPONS</h1>
-          <a class = "backButton" href="#" back="robotPage"><span class='glyphicon glyphicon-wrench'></span><span class="backText">BACK</span></a>
-        </div>
-      </div>
-      <div class = "row">
-        <div class="col-lg-12 col-md-12">
-
-
-        </div>
-      </div>
-      <div class = "row">
-        <div class="col-lg-12 col-md-12">
-          <div>
-            <a href="#" next="battlePage" class="nextButton btn btn-primary btn-lg">Enter Battledome</a>
-          </div>
-        </div>
-      </div>
-
-    </section>  -->
-
 <!-- Battle Screen -->
     <section id = "battleScreen" class="card battlePage">
+        <div class="row battle">
+
+         <!-- FIGHTER STATS -->
+          <div class="col-md-4 col-lg-4">
+            <div class="p1Stats"></div>
+          </div>
+
+          <div class="col-md-4 col-lg-4">
+            <!-- ATTACK AND NEW BATTLE BUTTONS -->
+            <button type="button" class="btn btn-primary btn-lg" value="Refresh Page" onClick="window.location.reload()">New Battle</button>
+            <button id="attack" type="button" class="btn btn-primary btn-lg">Attack</button>
+
+          </div>
+
+         <!-- ENEMY STATS -->
+          <div class="col-md-4 col-lg-4">
+            <div class="p2Stats"></div>
+          </div>
+        </div>
 
     </section>
   </div>
