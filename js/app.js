@@ -84,9 +84,10 @@ var Robot = (function(robot){
 
       console.log("p1 health", p1.health)
       console.log("p1 attack", p1.attack)
+
       p2.health = p2.health - p1.attack
       p1.health = p1.health - p2.attack
-      printStats(p2, p1)
+      printStats(p1, p2)
 
       if ((p2.health) <= 0) {
         $(".banner").append(`<h1 class="ban">Game over. You win!</h1>`);
